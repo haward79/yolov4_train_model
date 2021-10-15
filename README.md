@@ -2,8 +2,12 @@
 A short script to setup Yolo v4 Tiny for model training. There is also a pre-trained model provided for person, dog, and cat detection.
 
 # Pre-requirements
-Please install Yolo v4 from [this repo](https://github.com/haward79/yolov4_installer).
-Please install *python3-pip* by *apt* or other software management tools.
+Please install the following softwares:
+1. Yolo v4 from [this repo](https://github.com/haward79/yolov4_installer).
+2. *python3-pip* by *apt* or other software management tools.
+
+*Note :*  
+To train the model with GPU, don't forget to make darknet with GPU=1 in MakeFile.
 
 If all things get ready, you can download this project and run *yolo_train_setup.bash* .
 For more information, please refer to *Usage section*.
@@ -52,6 +56,9 @@ cd build/darknet/x64
 ```
 
 # Changelog
+- 10/15 2021
+    1. Add note for building darknet with gpu.
+
 - 10/10 2021
     1. First commit.
 
